@@ -2,7 +2,7 @@ let map; //紀錄地圖資訊
 let data = []; //紀錄抓取的資料
 let markers = []; //紀錄目前載入的marker
 let currentInfoWindow = ''; //紀錄當前點擊的google window
-let url = 'http://od-oas.kcg.gov.tw/api/service/Get/b4dd9c40-9027-4125-8666-06bef1756092'; //要抓取的JSON
+let url = 'https://od-oas.kcg.gov.tw/api/service/Get/b4dd9c40-9027-4125-8666-06bef1756092'; //要抓取的JSON
 let url2 = 'data.json';
 
 
