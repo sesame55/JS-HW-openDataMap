@@ -3,6 +3,8 @@ let data = []; //紀錄抓取的資料
 let markers = []; //紀錄目前載入的marker
 let currentInfoWindow = ''; //紀錄當前點擊的google window
 let url = 'http://od-oas.kcg.gov.tw/api/service/Get/b4dd9c40-9027-4125-8666-06bef1756092'; //要抓取的JSON
+let url2 = 'data.json';
+
 
 let mapSite = document.querySelector('#map'); //地圖位置
 let areaSelect = document.querySelector('.areaSelect'); //下拉選單位置
@@ -30,7 +32,7 @@ function initMap() {
 //抓取遠端資料
 let getData = () => {
     axios
-        .get(url)
+        .get(url2)
         .then(res => {
             data = res.data.data.retVal;
             // console.log(data);
