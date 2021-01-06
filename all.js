@@ -129,7 +129,7 @@ function loadData(lat, lng, text, markerColor) {
     });
 
     // 標記顏色
-    let iconUrl = 'http://maps.google.com/mapfiles/ms/icons/';
+    let iconUrl = 'https://maps.google.com/mapfiles/ms/icons/';
     iconUrl += markerColor + '-dot.png';
 
     let marker = new google.maps.Marker({
