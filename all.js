@@ -32,7 +32,7 @@ function initMap() {
 //抓取遠端資料
 let getData = () => {
     axios
-        .get(url)
+        .get(url2)
         .then(res => {
             data = res.data.data.retVal;
             // console.log(data);
